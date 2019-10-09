@@ -1,3 +1,0 @@
-SELECT *
-FROM db.record
-WHERE id == "12342352623"
