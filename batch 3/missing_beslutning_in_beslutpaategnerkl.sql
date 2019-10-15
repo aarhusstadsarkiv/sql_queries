@@ -1,4 +1,6 @@
-/* This query references a certain decision from Lotus Notes where the columns BeslutResume and Indhold are identitical although it is possible to find a more elaborate text in Lotus Notes in the field "Beslutning" when inspecting document properties */
+/* This query references a certain decision from Lotus Notes 
+where the columns BeslutResume and Indhold are identitical 
+although it is possible to find a more elaborate text in Lotus Notes in the field "Beslutning" when inspecting document properties */
 
 SELECT *
 FROM beslutpaategnerkl
@@ -12,7 +14,8 @@ LEFT JOIN dagsorden
 ON dagsorden_indstilling.dagsorden_id = dagsorden.dagsorden_id
 WHERE beslutpaategnerkl.BehDato = '2002-12-02' AND beslutpaategnerkl.BeslutResume = 'Tiltrådt' AND dagsorden.MoedeDato = '2002-12-02' AND indstilling.IndstOverskrift = 'Tillægsbevillinger til budget 2002 vedrørende regulering af den fælles IT-konto'
 
-/* The following query replicates the same issue in a different setting */
+/* The following query replicates 
+the same issue in a different setting */
 
 SELECT * 
 FROM beslutpaategnerkl
