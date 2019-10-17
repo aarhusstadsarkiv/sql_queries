@@ -1,4 +1,7 @@
-SELECT dagsorden.MøArt mødeforum, dagsorden.IndMøDato mødedato, dagsorden.dagsorden_id, referat.referat_id FROM dagsorden INNER JOIN referat ON dagsorden.MøArt = referat.MøArt AND dagsorden.IndMøDato = referat.DateX WHERE dagsorden.IndMøDato = '2012-11-01' AND dagsorden.MøArt = 'Ligestillingsudvalget'
+SELECT dagsorden.MøArt mødeforum, dagsorden.IndMøDato mødedato, dagsorden.dagsorden_id, referat.referat_id 
+FROM dagsorden 
+INNER JOIN referat ON dagsorden.MøArt = referat.MøArt AND dagsorden.IndMøDato = referat.DateX 
+WHERE dagsorden.IndMøDato = '2012-11-01' AND dagsorden.MøArt = 'Ligestillingsudvalget'
 
 SELECT *
 FROM moedeforum
